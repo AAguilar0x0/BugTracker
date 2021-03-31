@@ -1,0 +1,57 @@
+.subcontent {
+    width: 100%;
+}
+.content:nth-of-type(1) .card {
+    color: black;
+    width: unset;
+}
+.requests {
+    max-height: 800px;
+    height: 100%;
+    padding: 10px 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    font-size: 1.1rem;
+    row-gap: 18px;
+    column-gap: 18px;
+    overflow: overlay;
+}
+.userRequest{
+    max-width: 300px;
+    width: 100%;
+}
+.userRequest .neuL span {
+    display: inline-block;
+    background-color: transparent;
+}
+.userRequest > span {
+    padding: 3px;
+    font-size: 12px;
+    color: black;
+    border-radius: 25px;
+    border: 1px solid #999999;
+}
+.userRequest > .cardcontent {
+    grid-template-columns: max-content auto;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.userRequest button {
+    height: auto;
+    width: auto;
+    padding: 5px 7px;
+    margin: 5px 1px;
+    font-weight: 600;
+    font-size: 12px;
+    box-shadow: 1px 1px 2px #babecc, -2px -2px 3px #ffffff99;
+}
+.userRequest button:focus {
+    color: black;
+}
+.userRequest button:hover {
+    color: #757575;
+}

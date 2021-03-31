@@ -1,0 +1,20 @@
+.cardcontent {
+    justify-items: unset;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+.myform {
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 1px 4px 0 #4b4b4b4c;
+}
+.field{
+    margin: 0;
+}
+button{
+    padding: 0 20px;
+    width: auto;
+}

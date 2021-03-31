@@ -1,0 +1,267 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?h3oa7n');
+    src:  url('../fonts/icomoon.eot?h3oa7n#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?h3oa7n') format('truetype'),
+        url('../fonts/icomoon.woff?h3oa7n') format('woff'),
+        url('../fonts/icomoon.svg?h3oa7n#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-write:before {
+    content: "\e900";
+}
+.card {
+    width: 90%;
+    /* overflow: auto; */
+}
+.subcontent {
+    gap: 20px;
+}
+.bpCategoryHead {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 20px;
+    row-gap: 10px;
+    column-gap: 10px;
+    /* top: 50vh; */
+}
+.field {
+    height: 50px;
+    /* max-width: 300px;
+    display: flex;
+    position: relative; */
+    margin: 0;
+}
+.neuL select {
+    /* height: 100%; */
+    width: 100%;
+    /* padding-right: 5px; */
+    font-size: 20px;
+    outline: none;
+    border: none;
+    color: #757575;
+    border-radius: 25px;
+    /* box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73; */
+}
+.neuL select option {
+    border-radius: 25px;
+}
+.searchWParam {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.bugTemplate .neuL span {
+    display: inline-block;
+    background-color: transparent;
+}
+.bugTemplate .neuL:nth-of-type(1) {
+    justify-self: stretch;
+    max-width: 300px;
+    width: 100%;
+    /* height: 200px; */
+    overflow: auto;
+    /* white-space: nowrap; */
+    /* word-wrap: break-word; */
+}
+.bugTemplate .neuL:nth-of-type(2) {
+    max-width: 300px;
+    height: 200px;
+    overflow: auto;
+    /* word-wrap: break-word; */
+}
+/* .bugTemplate div {
+} */
+.bugTemplate > span {
+    padding: 3px;
+    font-size: 12px;
+    color: black;
+    border-radius: 25px;
+    border: 1px solid #999999;
+}
+.bugTemplate p {
+    background-color: transparent;
+}
+.bugTemplate > .cardcontent {
+    margin-bottom: 5px;
+}
+
+/* ==================================== BUGSHORT ==================================== */
+
+.bugShort{
+    max-width: 300px;
+    width: 100%;
+}
+.bugShort .neuL span {
+    display: inline-block;
+    background-color: transparent;
+}
+.bugShort > span {
+    padding: 3px;
+    font-size: 12px;
+    color: black;
+    border-radius: 25px;
+    border: 1px solid #999999;
+}
+.bugShort > .cardcontent {
+    grid-template-columns: max-content auto;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.bugShort button {
+    height: auto;
+    width: auto;
+    padding: 5px 7px;
+    margin: 5px 1px;
+    font-weight: 600;
+    font-size: 12px;
+    box-shadow: 1px 1px 2px #babecc, -2px -2px 3px #ffffff99;
+}
+.bugShort button:focus {
+    color: black;
+}
+.bugShort button:hover {
+    color: #757575;
+}
+
+/* ==================================== BUGSHORT ==================================== */
+
+div.resHScroll {
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+    font-size: 15px;
+}
+
+.bugscontent {
+    max-height: 800px;
+    height: 100%;
+    padding: 10px 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    font-size: 1.1rem;
+    row-gap: 18px;
+    column-gap: 18px;
+    overflow: overlay;
+}
+.createNew {
+    cursor: pointer;
+    color: black;
+}
+.modal {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; /* Full height */
+    overflow: overlay; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal > .card {
+    max-width: 750px;
+    box-shadow: none;
+    margin: auto;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+.modal span {
+    color: black;
+}
+.modal .field {
+    width: 100%;
+}
+.modal .field:nth-of-type(2) {
+    height: 200px;
+}
+.modal .cardcontent {
+    margin-top: 20px;
+    grid-template-columns: max-content auto;
+}
+.modal .reportbug {
+    font-size: 1.5em;
+}
+.modalclose {
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+.modal form button{
+    padding: 0 20px;
+    width: auto;
+}
+.modal .field textarea {
+    height: 100%;
+    width: 100%;
+    padding: 5px 15px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    resize: none;
+    color: #595959;
+    background-color: transparent;
+    border-radius: 25px;
+    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
+}
+.modalViewDetails .neuL *{
+    color: #595959;
+    background-color: transparent;
+}
+.modalViewDetails .neuL{
+    width: 100%;
+}
+.modalViewDetails pre {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    text-align: left;
+}
+.modalViewDetails .neuL:nth-of-type(4) {
+    max-height: 300px;
+
+    overflow: auto;
+}
